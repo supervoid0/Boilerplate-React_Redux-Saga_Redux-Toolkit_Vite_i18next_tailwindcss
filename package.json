@@ -40,7 +40,7 @@
     "redux-saga": "^1.2.1"
   },
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^3.3.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@vitejs/plugin-react": "^2.1.0",
     "autoprefixer": "^10.4.12",
     "eslint": "^8.24.0",

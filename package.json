@@ -1,52 +1,56 @@
 {
-  "name": "boilerplate",
+  "name": "Application Name",
   "version": "0.1.0",
-  "description": "React, vite, redux-toolkit, redux-saga, tailwindcss, i18next boilerplate",
-  "keywords": [
-    "react",
-    "redux",
-    "react-boilerplate",
-    "react-redux",
-    "vite",
-    "redux",
-    "redux-toolkit",
-    "redux-saga",
-    "i18n",
-    "i18next",
-    "tailwindcss"
-  ],
+  "description": "",
   "license": "MIT",
   "author": {
-    "name": "Sabab Md Nazmus"
+    "name": ""
   },
   "repository": {
     "type": "git"
   },
   "scripts": {
-    "start": "vite",
+    "start": "vite --host",
     "build": "vite build"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.3.5",
     "@reduxjs/toolkit": "^1.8.5",
-    "axios": "^1.7.4",
+    "antd": "^5.15.4",
+    "antd-style": "^3.7.1",
+    "axios": "^1.1.2",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.5",
     "history": "^5.3.0",
     "i18next": "^21.10.0",
+    "moment": "^2.30.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^11.18.6",
     "react-icons": "^4.4.0",
+    "react-konva": "^18.2.10",
     "react-redux": "^8.0.4",
+    "react-resize-detector": "^11.0.1",
     "react-router-dom": "^6.4.1",
-    "redux-saga": "^1.2.1"
+    "redux-saga": "^1.2.1",
+    "uniqid": "^5.4.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@trivago/prettier-plugin-sort-imports": "^3.3.0",
     "@vitejs/plugin-react": "^2.1.0",
     "autoprefixer": "^10.4.12",
-    "eslint": "^8.24.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-eslint-plugin": "^5.4.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "postcss": "^8.4.41",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.17",
     "prettier": "^2.7.1",
     "tailwindcss": "^3.1.8",
     "vite": "^3.1.6"

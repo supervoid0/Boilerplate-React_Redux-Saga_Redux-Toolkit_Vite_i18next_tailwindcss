@@ -1,7 +1,7 @@
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 
 import { api } from '../../utils';
-import { setLoading } from './../App/reducer';
+import { setLoading, showError } from './../App/reducer';
 import { fetchUser, setUser } from './reducer';
 import { userSelector } from './selectors';
 
@@ -13,6 +13,7 @@ export function* fetchUserWorker({ payload }) {
     const { data } = yield call(() => api.get(`/users/${id}`));
     yield put(setUser(data));
   } catch (err) {
+    yield put(showError(err));
   } finally {
     yield put(setLoading(false));
   }

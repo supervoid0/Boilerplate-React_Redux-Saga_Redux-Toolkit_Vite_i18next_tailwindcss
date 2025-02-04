@@ -39,8 +39,8 @@ function* loadingUser() {
   const token = yield select(makeSelectToken());
   const authHeader = yield call(generateAuthHeader, token);
   try {
-    const { user, facility } = yield call(api.user.loadUser, authHeader);
-    if (user) yield put(onLoadUserSuccess({ user, facility }));
+    const { user } = yield call(api.user.loadUser, authHeader);
+    if (user) yield put(onLoadUserSuccess(user));
     else yield put(authError('No user found'));
   } catch (error) {
     yield put(

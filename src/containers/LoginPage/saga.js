@@ -1,5 +1,5 @@
 import { api } from '../../utils';
-import { loginFailure, loginSuccess, showMiscError } from '../App/reducer';
+import { loginFailure, loginSuccess, showError } from '../App/reducer';
 import { attemptLogin, setLoading } from './reducer';
 import { call, put, takeLatest } from 'redux-saga/effects';
 
@@ -12,7 +12,7 @@ export function* loginWorker({ payload }) {
     yield put(loginSuccess({ user, token }));
   } catch (err) {
     yield put(loginFailure(err));
-    yield put(showMiscError(err));
+    yield put(showError(err));
   } finally {
     yield put(setLoading(false));
   }

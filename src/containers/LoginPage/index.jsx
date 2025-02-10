@@ -30,7 +30,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className='bg-[#25CCFF] h-full w-full flex justify-center items-center shadow-inner relative'>
+    <form className='bg-[#25CCFF] h-full w-full flex justify-center items-center shadow-inner relative'>
       <div className='px-8 py-10 bg-white drop-shadow-xl rounded-xl w-80'>
         <div className='flex items-center justify-center'>
           <div className='flex h-7 gap-1.5'>
@@ -75,7 +75,7 @@ const LoginPage = () => {
           </button>
         </div>
       </div>
-    </div>
+    </form>
   );
 };
 

@@ -34,7 +34,7 @@ function PrivateRoutes({ token, user, logout, setActiveTab, activeTab }) {
 }
 
 PrivateRoutes.propTypes = {
-  token: PropTypes.string.isRequired,
+  token: PropTypes.string,
   user: PropTypes.object.isRequired,
   logout: PropTypes.func.isRequired,
   setActiveTab: PropTypes.func.isRequired,

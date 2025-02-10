@@ -30,7 +30,7 @@ const appSlice = createSlice({
       state.loading = true;
     },
     onLoadUserSuccess: (state, action) => {
-      const { user = {} } = action.payload;
+      const user = action.payload;
       state.currentUser = user;
     },
     setActiveTab: (state, action) => {
